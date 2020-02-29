@@ -1,0 +1,21 @@
+{
+  "name": "kite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dashi296/kite.git",
+  "author": "dashi296 <falcon0296@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development postcss assets/scss/styles.scss -o static/css/styles.css --watch",
+    "build": "cross-env NODE_ENV=production postcss assets/scss/styles.scss -o static/css/styles.css"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.2.0"
+  }
+}
