@@ -1,0 +1,8 @@
+<div class="flex justify-center">
+
+{{ $currentTag := .Title }}
+  {{ range .Site.Taxonomies.tags }}
+  {{ $isActive := eq $currentTag .Page.Title }}
+    {{- partial "common/tagItem.html" (dict "context" . "isActive" $isActive) -}}
+  {{ end }}
+</div>

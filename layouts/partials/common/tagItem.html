@@ -1,13 +1,13 @@
 
-<a href="{{.Page.Permalink}}">  
-  <div class="flex justify-between items-center rounded hover:text-primary p-3 w-full">
+<a href="{{.context.Page.Permalink}}">
+  <div class="flex rounded-full text-secondary {{ if .isActive }} bg-secondary {{ end }} hover:bg-secondary border border-secondary border-solid p-1 mr-1 group">
     
-      <div class="text-xl font-bold tracking-wider pb-1">
-        {{ .Page.Title }}
+      <div class="text-xs font-bold tracking-wider mr-1 {{ if .isActive }} text-white {{ else }} text-secondary {{ end }} group-hover:text-white">
+        {{ .context.Page.Title }}
       </div>
     
-    <div class="text-gray text-right text-xs">
-      {{ .Count }} 件
+    <div class="text-center text-xs rounded-full w-5 {{ if .isActive }} bg-white text-secondary {{ else }} text-white bg-secondary {{ end }} group-hover:bg-white group-hover:text-secondary">
+      {{ .context.Count }}
     </div>
 
   </div>
