@@ -1,0 +1,5 @@
+<div class="tags">
+  {{ range .Params.Tags }}
+  {{- partial "common/chip.html" . -}}
+  {{ end }}
+</div>

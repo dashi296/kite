@@ -1,0 +1,27 @@
+<div class="text-center">
+  {{ with .Site.Params.author }}
+    <div class="avatar">
+      <img src="{{ .avatarUrl | relURL }}" class="rounded-full w-24 h-24 mx-auto my-8" alt="avatar">
+    </div>
+    <div class="notable tracking-widest pb-2">{{ .name }}</div>
+    <div class="notable tracking-widest text-sm">{{ .info }}</div>
+  {{ end }}
+
+  {{ with .Site.Params.social }}
+  <ul class="flex justify-center items-center">
+    {{ range sort . "weight" }}
+      {{ if .icon }}
+        <li class="m-4">
+          <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
+            <i class="{{ .icon }} text-gray hover:text-{{ .name }}" ></i>
+          </a>
+        </li>
+      {{ else }}
+        <li>
+          <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+  {{ end }}
+</div>

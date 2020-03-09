@@ -1,0 +1,56 @@
+{{ $relSec := sub now.Unix .Date.Unix }}
+
+{{ if gt $relSec 31536000 }}
+  {{ $years := div $relSec 31536000 }}
+  {{ $years }}
+  {{ if eq $years 1 }}
+    year
+  {{ else }}
+    years
+  {{ end }}
+  ago
+{{ else if gt $relSec 2592000 }}
+  {{ $months := div $relSec 2592000 }}
+  {{ $months }}
+  {{ if eq $months 1 }}
+    month
+  {{ else }}
+    months
+  {{ end }}
+  ago
+{{ else if gt $relSec 86400 }}
+  {{ $days := div $relSec 86400 }}
+  {{ $days }}
+  {{ if eq $days 1 }}
+    day
+  {{ else }}
+    days
+  {{ end }}
+  ago
+{{ else if gt $relSec 3600 }}
+  {{ $hours := div $relSec 3600 }}
+  {{ $hours }}
+  {{ if eq $hours 1 }}
+    hour
+  {{ else }}
+    hours
+  {{ end }}
+  ago
+{{ else if gt $relSec 60 }}
+  {{ $minutes := div $relSec 60 }}
+  {{ $minutes }}
+  {{ if eq $minutes 1 }}
+    minute
+  {{ else }}
+    minutes
+  {{ end }}
+  ago
+{{ else }}
+  {{ $relSec }}
+  {{ if eq $relSec 1 }}
+    second
+  {{ else }}
+    seconds
+  {{ end }}
+  ago
+{{ end }}

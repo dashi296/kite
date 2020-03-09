@@ -2,10 +2,13 @@
 <html>
   {{- partial "head.html" . -}}
   <body>
-    {{- partial "header.html" . -}}
-    <div id="content">
-    	{{- block "main" . }}{{- end }}
+    <div class="max-w-screen-xl mx-auto">
+    <div class="flex flex-row-reverse justify-center">
+      {{- partial "header/header.html" . -}}
+      <div id="content" class="w-full p-5 fade-in">
+        {{- block "main" . }}{{- end }}
+      </div>
     </div>
-    {{- partial "footer.html" . -}}
+  </div>
   </body>
 </html>

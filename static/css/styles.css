@@ -719,6 +719,10 @@ video {
   background-color: #171515;
 }
 
+.bg-linkedin {
+  background-color: #2867B2;
+}
+
 .bg-white {
   background-color: #FFFFFF;
 }
@@ -759,6 +763,10 @@ video {
   background-color: #171515;
 }
 
+.hover\:bg-linkedin:hover {
+  background-color: #2867B2;
+}
+
 .hover\:bg-white:hover {
   background-color: #FFFFFF;
 }
@@ -797,6 +805,10 @@ video {
 
 .focus\:bg-github:focus {
   background-color: #171515;
+}
+
+.focus\:bg-linkedin:focus {
+  background-color: #2867B2;
 }
 
 .focus\:bg-white:focus {
@@ -919,6 +931,10 @@ video {
   border-color: #171515;
 }
 
+.border-linkedin {
+  border-color: #2867B2;
+}
+
 .border-white {
   border-color: #FFFFFF;
 }
@@ -959,6 +975,10 @@ video {
   border-color: #171515;
 }
 
+.hover\:border-linkedin:hover {
+  border-color: #2867B2;
+}
+
 .hover\:border-white:hover {
   border-color: #FFFFFF;
 }
@@ -997,6 +1017,10 @@ video {
 
 .focus\:border-github:focus {
   border-color: #171515;
+}
+
+.focus\:border-linkedin:focus {
+  border-color: #2867B2;
 }
 
 .focus\:border-white:focus {
@@ -4141,6 +4165,26 @@ video {
   color: #171515;
 }
 
+.placeholder-linkedin::-webkit-input-placeholder {
+  color: #2867B2;
+}
+
+.placeholder-linkedin::-moz-placeholder {
+  color: #2867B2;
+}
+
+.placeholder-linkedin:-ms-input-placeholder {
+  color: #2867B2;
+}
+
+.placeholder-linkedin::-ms-input-placeholder {
+  color: #2867B2;
+}
+
+.placeholder-linkedin::placeholder {
+  color: #2867B2;
+}
+
 .placeholder-white::-webkit-input-placeholder {
   color: #FFFFFF;
 }
@@ -4339,6 +4383,26 @@ video {
 
 .focus\:placeholder-github:focus::placeholder {
   color: #171515;
+}
+
+.focus\:placeholder-linkedin:focus::-webkit-input-placeholder {
+  color: #2867B2;
+}
+
+.focus\:placeholder-linkedin:focus::-moz-placeholder {
+  color: #2867B2;
+}
+
+.focus\:placeholder-linkedin:focus:-ms-input-placeholder {
+  color: #2867B2;
+}
+
+.focus\:placeholder-linkedin:focus::-ms-input-placeholder {
+  color: #2867B2;
+}
+
+.focus\:placeholder-linkedin:focus::placeholder {
+  color: #2867B2;
 }
 
 .focus\:placeholder-white:focus::-webkit-input-placeholder {
@@ -4754,6 +4818,10 @@ video {
   color: #171515;
 }
 
+.text-linkedin {
+  color: #2867B2;
+}
+
 .text-white {
   color: #FFFFFF;
 }
@@ -4794,6 +4862,10 @@ video {
   color: #171515;
 }
 
+.hover\:text-linkedin:hover {
+  color: #2867B2;
+}
+
 .hover\:text-white:hover {
   color: #FFFFFF;
 }
@@ -4832,6 +4904,10 @@ video {
 
 .focus\:text-github:focus {
   color: #171515;
+}
+
+.focus\:text-linkedin:focus {
+  color: #2867B2;
 }
 
 .focus\:text-white:focus {
@@ -7723,6 +7799,112 @@ video {
   transition-duration: 1000ms;
 }
 
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.notable {
+  font-family: 'Notable' ;
+}
+
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size:2.0rem;
+  line-height:1.35;
+  padding-bottom: 2.0rem;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-weight:bold;
+  font-size:1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+h3 {
+  font-weight:normal;
+  text-transform:uppercase;
+  font-size:1.6rem;
+  letter-spacing:0.15em;
+}
+
+p {
+  text-align:left;
+  font-size:1.0rem;
+  padding-bottom: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease 0s 1 normal;
+  -webkit-animation: fadeIn 0.5s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
@@ -7820,6 +8002,10 @@ video {
     background-color: #171515;
   }
 
+  .sm\:bg-linkedin {
+    background-color: #2867B2;
+  }
+
   .sm\:bg-white {
     background-color: #FFFFFF;
   }
@@ -7860,6 +8046,10 @@ video {
     background-color: #171515;
   }
 
+  .sm\:hover\:bg-linkedin:hover {
+    background-color: #2867B2;
+  }
+
   .sm\:hover\:bg-white:hover {
     background-color: #FFFFFF;
   }
@@ -7898,6 +8088,10 @@ video {
 
   .sm\:focus\:bg-github:focus {
     background-color: #171515;
+  }
+
+  .sm\:focus\:bg-linkedin:focus {
+    background-color: #2867B2;
   }
 
   .sm\:focus\:bg-white:focus {
@@ -8020,6 +8214,10 @@ video {
     border-color: #171515;
   }
 
+  .sm\:border-linkedin {
+    border-color: #2867B2;
+  }
+
   .sm\:border-white {
     border-color: #FFFFFF;
   }
@@ -8060,6 +8258,10 @@ video {
     border-color: #171515;
   }
 
+  .sm\:hover\:border-linkedin:hover {
+    border-color: #2867B2;
+  }
+
   .sm\:hover\:border-white:hover {
     border-color: #FFFFFF;
   }
@@ -8098,6 +8300,10 @@ video {
 
   .sm\:focus\:border-github:focus {
     border-color: #171515;
+  }
+
+  .sm\:focus\:border-linkedin:focus {
+    border-color: #2867B2;
   }
 
   .sm\:focus\:border-white:focus {
@@ -11242,6 +11448,26 @@ video {
     color: #171515;
   }
 
+  .sm\:placeholder-linkedin::-webkit-input-placeholder {
+    color: #2867B2;
+  }
+
+  .sm\:placeholder-linkedin::-moz-placeholder {
+    color: #2867B2;
+  }
+
+  .sm\:placeholder-linkedin:-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .sm\:placeholder-linkedin::-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .sm\:placeholder-linkedin::placeholder {
+    color: #2867B2;
+  }
+
   .sm\:placeholder-white::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -11440,6 +11666,26 @@ video {
 
   .sm\:focus\:placeholder-github:focus::placeholder {
     color: #171515;
+  }
+
+  .sm\:focus\:placeholder-linkedin:focus::-webkit-input-placeholder {
+    color: #2867B2;
+  }
+
+  .sm\:focus\:placeholder-linkedin:focus::-moz-placeholder {
+    color: #2867B2;
+  }
+
+  .sm\:focus\:placeholder-linkedin:focus:-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .sm\:focus\:placeholder-linkedin:focus::-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .sm\:focus\:placeholder-linkedin:focus::placeholder {
+    color: #2867B2;
   }
 
   .sm\:focus\:placeholder-white:focus::-webkit-input-placeholder {
@@ -11855,6 +12101,10 @@ video {
     color: #171515;
   }
 
+  .sm\:text-linkedin {
+    color: #2867B2;
+  }
+
   .sm\:text-white {
     color: #FFFFFF;
   }
@@ -11895,6 +12145,10 @@ video {
     color: #171515;
   }
 
+  .sm\:hover\:text-linkedin:hover {
+    color: #2867B2;
+  }
+
   .sm\:hover\:text-white:hover {
     color: #FFFFFF;
   }
@@ -11933,6 +12187,10 @@ video {
 
   .sm\:focus\:text-github:focus {
     color: #171515;
+  }
+
+  .sm\:focus\:text-linkedin:focus {
+    color: #2867B2;
   }
 
   .sm\:focus\:text-white:focus {
@@ -14922,6 +15180,10 @@ video {
     background-color: #171515;
   }
 
+  .md\:bg-linkedin {
+    background-color: #2867B2;
+  }
+
   .md\:bg-white {
     background-color: #FFFFFF;
   }
@@ -14962,6 +15224,10 @@ video {
     background-color: #171515;
   }
 
+  .md\:hover\:bg-linkedin:hover {
+    background-color: #2867B2;
+  }
+
   .md\:hover\:bg-white:hover {
     background-color: #FFFFFF;
   }
@@ -15000,6 +15266,10 @@ video {
 
   .md\:focus\:bg-github:focus {
     background-color: #171515;
+  }
+
+  .md\:focus\:bg-linkedin:focus {
+    background-color: #2867B2;
   }
 
   .md\:focus\:bg-white:focus {
@@ -15122,6 +15392,10 @@ video {
     border-color: #171515;
   }
 
+  .md\:border-linkedin {
+    border-color: #2867B2;
+  }
+
   .md\:border-white {
     border-color: #FFFFFF;
   }
@@ -15162,6 +15436,10 @@ video {
     border-color: #171515;
   }
 
+  .md\:hover\:border-linkedin:hover {
+    border-color: #2867B2;
+  }
+
   .md\:hover\:border-white:hover {
     border-color: #FFFFFF;
   }
@@ -15200,6 +15478,10 @@ video {
 
   .md\:focus\:border-github:focus {
     border-color: #171515;
+  }
+
+  .md\:focus\:border-linkedin:focus {
+    border-color: #2867B2;
   }
 
   .md\:focus\:border-white:focus {
@@ -18344,6 +18626,26 @@ video {
     color: #171515;
   }
 
+  .md\:placeholder-linkedin::-webkit-input-placeholder {
+    color: #2867B2;
+  }
+
+  .md\:placeholder-linkedin::-moz-placeholder {
+    color: #2867B2;
+  }
+
+  .md\:placeholder-linkedin:-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .md\:placeholder-linkedin::-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .md\:placeholder-linkedin::placeholder {
+    color: #2867B2;
+  }
+
   .md\:placeholder-white::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -18542,6 +18844,26 @@ video {
 
   .md\:focus\:placeholder-github:focus::placeholder {
     color: #171515;
+  }
+
+  .md\:focus\:placeholder-linkedin:focus::-webkit-input-placeholder {
+    color: #2867B2;
+  }
+
+  .md\:focus\:placeholder-linkedin:focus::-moz-placeholder {
+    color: #2867B2;
+  }
+
+  .md\:focus\:placeholder-linkedin:focus:-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .md\:focus\:placeholder-linkedin:focus::-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .md\:focus\:placeholder-linkedin:focus::placeholder {
+    color: #2867B2;
   }
 
   .md\:focus\:placeholder-white:focus::-webkit-input-placeholder {
@@ -18957,6 +19279,10 @@ video {
     color: #171515;
   }
 
+  .md\:text-linkedin {
+    color: #2867B2;
+  }
+
   .md\:text-white {
     color: #FFFFFF;
   }
@@ -18997,6 +19323,10 @@ video {
     color: #171515;
   }
 
+  .md\:hover\:text-linkedin:hover {
+    color: #2867B2;
+  }
+
   .md\:hover\:text-white:hover {
     color: #FFFFFF;
   }
@@ -19035,6 +19365,10 @@ video {
 
   .md\:focus\:text-github:focus {
     color: #171515;
+  }
+
+  .md\:focus\:text-linkedin:focus {
+    color: #2867B2;
   }
 
   .md\:focus\:text-white:focus {
@@ -22024,6 +22358,10 @@ video {
     background-color: #171515;
   }
 
+  .lg\:bg-linkedin {
+    background-color: #2867B2;
+  }
+
   .lg\:bg-white {
     background-color: #FFFFFF;
   }
@@ -22064,6 +22402,10 @@ video {
     background-color: #171515;
   }
 
+  .lg\:hover\:bg-linkedin:hover {
+    background-color: #2867B2;
+  }
+
   .lg\:hover\:bg-white:hover {
     background-color: #FFFFFF;
   }
@@ -22102,6 +22444,10 @@ video {
 
   .lg\:focus\:bg-github:focus {
     background-color: #171515;
+  }
+
+  .lg\:focus\:bg-linkedin:focus {
+    background-color: #2867B2;
   }
 
   .lg\:focus\:bg-white:focus {
@@ -22224,6 +22570,10 @@ video {
     border-color: #171515;
   }
 
+  .lg\:border-linkedin {
+    border-color: #2867B2;
+  }
+
   .lg\:border-white {
     border-color: #FFFFFF;
   }
@@ -22264,6 +22614,10 @@ video {
     border-color: #171515;
   }
 
+  .lg\:hover\:border-linkedin:hover {
+    border-color: #2867B2;
+  }
+
   .lg\:hover\:border-white:hover {
     border-color: #FFFFFF;
   }
@@ -22302,6 +22656,10 @@ video {
 
   .lg\:focus\:border-github:focus {
     border-color: #171515;
+  }
+
+  .lg\:focus\:border-linkedin:focus {
+    border-color: #2867B2;
   }
 
   .lg\:focus\:border-white:focus {
@@ -25446,6 +25804,26 @@ video {
     color: #171515;
   }
 
+  .lg\:placeholder-linkedin::-webkit-input-placeholder {
+    color: #2867B2;
+  }
+
+  .lg\:placeholder-linkedin::-moz-placeholder {
+    color: #2867B2;
+  }
+
+  .lg\:placeholder-linkedin:-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .lg\:placeholder-linkedin::-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .lg\:placeholder-linkedin::placeholder {
+    color: #2867B2;
+  }
+
   .lg\:placeholder-white::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -25644,6 +26022,26 @@ video {
 
   .lg\:focus\:placeholder-github:focus::placeholder {
     color: #171515;
+  }
+
+  .lg\:focus\:placeholder-linkedin:focus::-webkit-input-placeholder {
+    color: #2867B2;
+  }
+
+  .lg\:focus\:placeholder-linkedin:focus::-moz-placeholder {
+    color: #2867B2;
+  }
+
+  .lg\:focus\:placeholder-linkedin:focus:-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .lg\:focus\:placeholder-linkedin:focus::-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .lg\:focus\:placeholder-linkedin:focus::placeholder {
+    color: #2867B2;
   }
 
   .lg\:focus\:placeholder-white:focus::-webkit-input-placeholder {
@@ -26059,6 +26457,10 @@ video {
     color: #171515;
   }
 
+  .lg\:text-linkedin {
+    color: #2867B2;
+  }
+
   .lg\:text-white {
     color: #FFFFFF;
   }
@@ -26099,6 +26501,10 @@ video {
     color: #171515;
   }
 
+  .lg\:hover\:text-linkedin:hover {
+    color: #2867B2;
+  }
+
   .lg\:hover\:text-white:hover {
     color: #FFFFFF;
   }
@@ -26137,6 +26543,10 @@ video {
 
   .lg\:focus\:text-github:focus {
     color: #171515;
+  }
+
+  .lg\:focus\:text-linkedin:focus {
+    color: #2867B2;
   }
 
   .lg\:focus\:text-white:focus {
@@ -29126,6 +29536,10 @@ video {
     background-color: #171515;
   }
 
+  .xl\:bg-linkedin {
+    background-color: #2867B2;
+  }
+
   .xl\:bg-white {
     background-color: #FFFFFF;
   }
@@ -29166,6 +29580,10 @@ video {
     background-color: #171515;
   }
 
+  .xl\:hover\:bg-linkedin:hover {
+    background-color: #2867B2;
+  }
+
   .xl\:hover\:bg-white:hover {
     background-color: #FFFFFF;
   }
@@ -29204,6 +29622,10 @@ video {
 
   .xl\:focus\:bg-github:focus {
     background-color: #171515;
+  }
+
+  .xl\:focus\:bg-linkedin:focus {
+    background-color: #2867B2;
   }
 
   .xl\:focus\:bg-white:focus {
@@ -29326,6 +29748,10 @@ video {
     border-color: #171515;
   }
 
+  .xl\:border-linkedin {
+    border-color: #2867B2;
+  }
+
   .xl\:border-white {
     border-color: #FFFFFF;
   }
@@ -29366,6 +29792,10 @@ video {
     border-color: #171515;
   }
 
+  .xl\:hover\:border-linkedin:hover {
+    border-color: #2867B2;
+  }
+
   .xl\:hover\:border-white:hover {
     border-color: #FFFFFF;
   }
@@ -29404,6 +29834,10 @@ video {
 
   .xl\:focus\:border-github:focus {
     border-color: #171515;
+  }
+
+  .xl\:focus\:border-linkedin:focus {
+    border-color: #2867B2;
   }
 
   .xl\:focus\:border-white:focus {
@@ -32548,6 +32982,26 @@ video {
     color: #171515;
   }
 
+  .xl\:placeholder-linkedin::-webkit-input-placeholder {
+    color: #2867B2;
+  }
+
+  .xl\:placeholder-linkedin::-moz-placeholder {
+    color: #2867B2;
+  }
+
+  .xl\:placeholder-linkedin:-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .xl\:placeholder-linkedin::-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .xl\:placeholder-linkedin::placeholder {
+    color: #2867B2;
+  }
+
   .xl\:placeholder-white::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -32746,6 +33200,26 @@ video {
 
   .xl\:focus\:placeholder-github:focus::placeholder {
     color: #171515;
+  }
+
+  .xl\:focus\:placeholder-linkedin:focus::-webkit-input-placeholder {
+    color: #2867B2;
+  }
+
+  .xl\:focus\:placeholder-linkedin:focus::-moz-placeholder {
+    color: #2867B2;
+  }
+
+  .xl\:focus\:placeholder-linkedin:focus:-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .xl\:focus\:placeholder-linkedin:focus::-ms-input-placeholder {
+    color: #2867B2;
+  }
+
+  .xl\:focus\:placeholder-linkedin:focus::placeholder {
+    color: #2867B2;
   }
 
   .xl\:focus\:placeholder-white:focus::-webkit-input-placeholder {
@@ -33161,6 +33635,10 @@ video {
     color: #171515;
   }
 
+  .xl\:text-linkedin {
+    color: #2867B2;
+  }
+
   .xl\:text-white {
     color: #FFFFFF;
   }
@@ -33201,6 +33679,10 @@ video {
     color: #171515;
   }
 
+  .xl\:hover\:text-linkedin:hover {
+    color: #2867B2;
+  }
+
   .xl\:hover\:text-white:hover {
     color: #FFFFFF;
   }
@@ -33239,6 +33721,10 @@ video {
 
   .xl\:focus\:text-github:focus {
     color: #171515;
+  }
+
+  .xl\:focus\:text-linkedin:focus {
+    color: #2867B2;
   }
 
   .xl\:focus\:text-white:focus {

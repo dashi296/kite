@@ -1,0 +1,13 @@
+<div class="flex flex-col justify-center">
+  {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}">
+      <div class="flex justify-center items-center h-full">
+        <div
+          class="notable text-sm text-gray hover:text-primary tracking-widest py-4 px-4 "
+        >
+          {{ .Name }}
+        </div>
+      </div>
+    </a>
+  {{ end }}
+  </div>

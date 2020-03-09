@@ -1,0 +1,19 @@
+
+  <div class="rounded hover:text-primary p-5 inline-block w-full">
+    <a href="{{.Permalink}}">
+      <div class="text-sm font-bold text-secondary">
+        {{ .Date.Format "2006-01-02" }}
+      </div>
+      <div class="text-xl font-bold tracking-wider pb-1">
+        {{ .Title }}
+      </div>
+    
+      <div class="text-sm tracking-wide leading-5 text-black">
+        {{ .Summary }}{{ if .Truncated }}...{{ end }}
+      </div>
+    </a>
+    {{- partial "common/tags.html" . -}}
+    <time class="text-gray text-right text-xs">
+      {{- partial "common/relativeTime.html" . -}}
+    </time>
+  </div>

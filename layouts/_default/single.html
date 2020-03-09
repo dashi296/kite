@@ -1,9 +1,10 @@
 
 {{ define "main" }}
-<section id="main">
+<section id="main" class="max-w-screen-lg py-12">
   <h1 id="title">{{ .Title }}</h1>
+  {{- partial "common/tags.html" . -}}
   <div>
-        <article id="content">
+        <article id="content" class="markdown-body">
            {{ .Content }}
         </article>
   </div>

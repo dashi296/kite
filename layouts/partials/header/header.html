@@ -1,0 +1,19 @@
+<header class="shadow hidden md:flex flex-col px-5 w-64">
+  <div class="w-full max-w-screen-lg mx-auto">
+    <a href="{{ .Site.BaseURL | relURL }}">
+      <div class="notable text-2xl text-primary tracking-widest py-3 text-center">
+        KITE
+      </div>
+    </a>
+    {{- partial "common/divider.html" . -}}
+    
+    {{- partial "header/profile.html" . -}}
+
+    {{- partial "common/divider.html" . -}}
+
+    {{- partial "header/menus.html" . -}}
+  </div>
+  <div class="mt-auto">
+  {{- partial "common/copyright.html" . -}}
+  </div>
+</header>

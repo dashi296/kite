@@ -3,12 +3,14 @@
 
 name = "Kite"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+licenselink = "https://github.com/dashi296/kite/blob/master/LICENSE"
+description = "A customizable blog theme"
 homepage = "http://example.com/"
-tags = []
+tags = [
+  "blog",
+]
 features = []
-min_version = "0.41"
+min_version = "0.1"
 
 [author]
   name = "dashi296"

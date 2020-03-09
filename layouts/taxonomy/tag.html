@@ -12,7 +12,5 @@
     {{ range $index, $element := (.Paginator 5).Pages }}
       {{- partial "common/postItem.html" . -}}
     {{ end }}
-
-    {{- partial "common/pagination.html" . -}}
 </main>
 {{ end }}
