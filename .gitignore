@@ -1,1 +1,4 @@
 node_modules/
+
+# yarn watchやyarn buildで自動生成されるため不要
+static/css/styles.css
