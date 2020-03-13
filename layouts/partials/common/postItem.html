@@ -1,9 +1,7 @@
 
-  <div class="rounded hover:text-primary p-5 inline-block w-full">
+  <div class="rounded hover:text-primary p-2 sm:p-5 inline-block w-full">
     <a href="{{.RelPermalink}}">
-      <div class="text-sm font-bold text-secondary">
-        {{ .Date.Format "2006-01-02" }}
-      </div>
+      {{- partial "common/dateItem.html" . -}}
       <div class="text-xl font-bold tracking-wider pb-1">
         {{ .Title }}
       </div>
