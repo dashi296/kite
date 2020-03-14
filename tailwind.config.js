@@ -16,6 +16,7 @@ module.exports = {
       twitter: '#1DA1F2',
       github: '#171515',
       linkedin: '#2867B2',
+      qiita: '#55C500',
       white: '#FFFFFF',
       black: '#000000'
     },

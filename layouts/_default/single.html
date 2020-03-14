@@ -11,18 +11,23 @@
   </div>
 </section>
 <aside id="meta">
-    <div>
-    <section>
-      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-      <h5 id="wordcount"> {{ .WordCount }} Words </h5>
-    </section>
-    <div>
-        {{ with .PrevInSection }}
-          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-        {{ with .NextInSection }}
-          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-    </div>
+  <div class="flex justify-between">
+    {{ with .PrevInSection }}
+      <div class="self-start hover:text-primary">
+        <a class="previous" href="{{.RelPermalink}}">
+          <div>前の記事</div>
+          << {{.Title}}
+        </a>
+      </div>
+    {{ end }}
+    {{ with .NextInSection }}
+      <div class="self-end hover:text-primary">
+        <a class="next" href="{{.RelPermalink}}">
+          <div class="text-right">次の記事</div>
+          {{.Title}} >>
+        </a>
+      </div>
+    {{ end }}
+  </div>
 </aside>
 {{ end }}

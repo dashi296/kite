@@ -782,6 +782,10 @@ video {
   background-color: #2867B2;
 }
 
+.bg-qiita {
+  background-color: #55C500;
+}
+
 .bg-white {
   background-color: #FFFFFF;
 }
@@ -826,6 +830,10 @@ video {
   background-color: #2867B2;
 }
 
+.hover\:bg-qiita:hover {
+  background-color: #55C500;
+}
+
 .hover\:bg-white:hover {
   background-color: #FFFFFF;
 }
@@ -868,6 +876,10 @@ video {
 
 .group:hover .group-hover\:bg-linkedin {
   background-color: #2867B2;
+}
+
+.group:hover .group-hover\:bg-qiita {
+  background-color: #55C500;
 }
 
 .group:hover .group-hover\:bg-white {
@@ -1154,6 +1166,10 @@ video {
   border-color: #2867B2;
 }
 
+.border-qiita {
+  border-color: #55C500;
+}
+
 .border-white {
   border-color: #FFFFFF;
 }
@@ -1198,6 +1214,10 @@ video {
   border-color: #2867B2;
 }
 
+.hover\:border-qiita:hover {
+  border-color: #55C500;
+}
+
 .hover\:border-white:hover {
   border-color: #FFFFFF;
 }
@@ -1240,6 +1260,10 @@ video {
 
 .group:hover .group-hover\:border-linkedin {
   border-color: #2867B2;
+}
+
+.group:hover .group-hover\:border-qiita {
+  border-color: #55C500;
 }
 
 .group:hover .group-hover\:border-white {
@@ -10004,6 +10028,26 @@ video {
   color: #2867B2;
 }
 
+.placeholder-qiita::-webkit-input-placeholder {
+  color: #55C500;
+}
+
+.placeholder-qiita::-moz-placeholder {
+  color: #55C500;
+}
+
+.placeholder-qiita:-ms-input-placeholder {
+  color: #55C500;
+}
+
+.placeholder-qiita::-ms-input-placeholder {
+  color: #55C500;
+}
+
+.placeholder-qiita::placeholder {
+  color: #55C500;
+}
+
 .placeholder-white::-webkit-input-placeholder {
   color: #FFFFFF;
 }
@@ -10224,6 +10268,26 @@ video {
   color: #2867B2;
 }
 
+.hover\:placeholder-qiita:hover::-webkit-input-placeholder {
+  color: #55C500;
+}
+
+.hover\:placeholder-qiita:hover::-moz-placeholder {
+  color: #55C500;
+}
+
+.hover\:placeholder-qiita:hover:-ms-input-placeholder {
+  color: #55C500;
+}
+
+.hover\:placeholder-qiita:hover::-ms-input-placeholder {
+  color: #55C500;
+}
+
+.hover\:placeholder-qiita:hover::placeholder {
+  color: #55C500;
+}
+
 .hover\:placeholder-white:hover::-webkit-input-placeholder {
   color: #FFFFFF;
 }
@@ -10442,6 +10506,26 @@ video {
 
 .group:hover .group-hover\:placeholder-linkedin::placeholder {
   color: #2867B2;
+}
+
+.group:hover .group-hover\:placeholder-qiita::-webkit-input-placeholder {
+  color: #55C500;
+}
+
+.group:hover .group-hover\:placeholder-qiita::-moz-placeholder {
+  color: #55C500;
+}
+
+.group:hover .group-hover\:placeholder-qiita:-ms-input-placeholder {
+  color: #55C500;
+}
+
+.group:hover .group-hover\:placeholder-qiita::-ms-input-placeholder {
+  color: #55C500;
+}
+
+.group:hover .group-hover\:placeholder-qiita::placeholder {
+  color: #55C500;
 }
 
 .group:hover .group-hover\:placeholder-white::-webkit-input-placeholder {
@@ -11303,6 +11387,10 @@ video {
   color: #2867B2;
 }
 
+.text-qiita {
+  color: #55C500;
+}
+
 .text-white {
   color: #FFFFFF;
 }
@@ -11347,6 +11435,10 @@ video {
   color: #2867B2;
 }
 
+.hover\:text-qiita:hover {
+  color: #55C500;
+}
+
 .hover\:text-white:hover {
   color: #FFFFFF;
 }
@@ -11389,6 +11481,10 @@ video {
 
 .group:hover .group-hover\:text-linkedin {
   color: #2867B2;
+}
+
+.group:hover .group-hover\:text-qiita {
+  color: #55C500;
 }
 
 .group:hover .group-hover\:text-white {
@@ -16984,6 +17080,10 @@ p {
     background-color: #2867B2;
   }
 
+  .sm\:bg-qiita {
+    background-color: #55C500;
+  }
+
   .sm\:bg-white {
     background-color: #FFFFFF;
   }
@@ -17028,6 +17128,10 @@ p {
     background-color: #2867B2;
   }
 
+  .sm\:hover\:bg-qiita:hover {
+    background-color: #55C500;
+  }
+
   .sm\:hover\:bg-white:hover {
     background-color: #FFFFFF;
   }
@@ -17070,6 +17174,10 @@ p {
 
   .group:hover .sm\:group-hover\:bg-linkedin {
     background-color: #2867B2;
+  }
+
+  .group:hover .sm\:group-hover\:bg-qiita {
+    background-color: #55C500;
   }
 
   .group:hover .sm\:group-hover\:bg-white {
@@ -17356,6 +17464,10 @@ p {
     border-color: #2867B2;
   }
 
+  .sm\:border-qiita {
+    border-color: #55C500;
+  }
+
   .sm\:border-white {
     border-color: #FFFFFF;
   }
@@ -17400,6 +17512,10 @@ p {
     border-color: #2867B2;
   }
 
+  .sm\:hover\:border-qiita:hover {
+    border-color: #55C500;
+  }
+
   .sm\:hover\:border-white:hover {
     border-color: #FFFFFF;
   }
@@ -17442,6 +17558,10 @@ p {
 
   .group:hover .sm\:group-hover\:border-linkedin {
     border-color: #2867B2;
+  }
+
+  .group:hover .sm\:group-hover\:border-qiita {
+    border-color: #55C500;
   }
 
   .group:hover .sm\:group-hover\:border-white {
@@ -26206,6 +26326,26 @@ p {
     color: #2867B2;
   }
 
+  .sm\:placeholder-qiita::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .sm\:placeholder-qiita::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .sm\:placeholder-qiita:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .sm\:placeholder-qiita::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .sm\:placeholder-qiita::placeholder {
+    color: #55C500;
+  }
+
   .sm\:placeholder-white::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -26426,6 +26566,26 @@ p {
     color: #2867B2;
   }
 
+  .sm\:hover\:placeholder-qiita:hover::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .sm\:hover\:placeholder-qiita:hover::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .sm\:hover\:placeholder-qiita:hover:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .sm\:hover\:placeholder-qiita:hover::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .sm\:hover\:placeholder-qiita:hover::placeholder {
+    color: #55C500;
+  }
+
   .sm\:hover\:placeholder-white:hover::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -26644,6 +26804,26 @@ p {
 
   .group:hover .sm\:group-hover\:placeholder-linkedin::placeholder {
     color: #2867B2;
+  }
+
+  .group:hover .sm\:group-hover\:placeholder-qiita::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .sm\:group-hover\:placeholder-qiita::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .sm\:group-hover\:placeholder-qiita:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .sm\:group-hover\:placeholder-qiita::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .sm\:group-hover\:placeholder-qiita::placeholder {
+    color: #55C500;
   }
 
   .group:hover .sm\:group-hover\:placeholder-white::-webkit-input-placeholder {
@@ -27505,6 +27685,10 @@ p {
     color: #2867B2;
   }
 
+  .sm\:text-qiita {
+    color: #55C500;
+  }
+
   .sm\:text-white {
     color: #FFFFFF;
   }
@@ -27549,6 +27733,10 @@ p {
     color: #2867B2;
   }
 
+  .sm\:hover\:text-qiita:hover {
+    color: #55C500;
+  }
+
   .sm\:hover\:text-white:hover {
     color: #FFFFFF;
   }
@@ -27591,6 +27779,10 @@ p {
 
   .group:hover .sm\:group-hover\:text-linkedin {
     color: #2867B2;
+  }
+
+  .group:hover .sm\:group-hover\:text-qiita {
+    color: #55C500;
   }
 
   .group:hover .sm\:group-hover\:text-white {
@@ -33081,6 +33273,10 @@ p {
     background-color: #2867B2;
   }
 
+  .md\:bg-qiita {
+    background-color: #55C500;
+  }
+
   .md\:bg-white {
     background-color: #FFFFFF;
   }
@@ -33125,6 +33321,10 @@ p {
     background-color: #2867B2;
   }
 
+  .md\:hover\:bg-qiita:hover {
+    background-color: #55C500;
+  }
+
   .md\:hover\:bg-white:hover {
     background-color: #FFFFFF;
   }
@@ -33167,6 +33367,10 @@ p {
 
   .group:hover .md\:group-hover\:bg-linkedin {
     background-color: #2867B2;
+  }
+
+  .group:hover .md\:group-hover\:bg-qiita {
+    background-color: #55C500;
   }
 
   .group:hover .md\:group-hover\:bg-white {
@@ -33453,6 +33657,10 @@ p {
     border-color: #2867B2;
   }
 
+  .md\:border-qiita {
+    border-color: #55C500;
+  }
+
   .md\:border-white {
     border-color: #FFFFFF;
   }
@@ -33497,6 +33705,10 @@ p {
     border-color: #2867B2;
   }
 
+  .md\:hover\:border-qiita:hover {
+    border-color: #55C500;
+  }
+
   .md\:hover\:border-white:hover {
     border-color: #FFFFFF;
   }
@@ -33539,6 +33751,10 @@ p {
 
   .group:hover .md\:group-hover\:border-linkedin {
     border-color: #2867B2;
+  }
+
+  .group:hover .md\:group-hover\:border-qiita {
+    border-color: #55C500;
   }
 
   .group:hover .md\:group-hover\:border-white {
@@ -42303,6 +42519,26 @@ p {
     color: #2867B2;
   }
 
+  .md\:placeholder-qiita::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .md\:placeholder-qiita::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .md\:placeholder-qiita:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .md\:placeholder-qiita::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .md\:placeholder-qiita::placeholder {
+    color: #55C500;
+  }
+
   .md\:placeholder-white::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -42523,6 +42759,26 @@ p {
     color: #2867B2;
   }
 
+  .md\:hover\:placeholder-qiita:hover::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .md\:hover\:placeholder-qiita:hover::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .md\:hover\:placeholder-qiita:hover:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .md\:hover\:placeholder-qiita:hover::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .md\:hover\:placeholder-qiita:hover::placeholder {
+    color: #55C500;
+  }
+
   .md\:hover\:placeholder-white:hover::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -42741,6 +42997,26 @@ p {
 
   .group:hover .md\:group-hover\:placeholder-linkedin::placeholder {
     color: #2867B2;
+  }
+
+  .group:hover .md\:group-hover\:placeholder-qiita::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .md\:group-hover\:placeholder-qiita::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .md\:group-hover\:placeholder-qiita:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .md\:group-hover\:placeholder-qiita::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .md\:group-hover\:placeholder-qiita::placeholder {
+    color: #55C500;
   }
 
   .group:hover .md\:group-hover\:placeholder-white::-webkit-input-placeholder {
@@ -43602,6 +43878,10 @@ p {
     color: #2867B2;
   }
 
+  .md\:text-qiita {
+    color: #55C500;
+  }
+
   .md\:text-white {
     color: #FFFFFF;
   }
@@ -43646,6 +43926,10 @@ p {
     color: #2867B2;
   }
 
+  .md\:hover\:text-qiita:hover {
+    color: #55C500;
+  }
+
   .md\:hover\:text-white:hover {
     color: #FFFFFF;
   }
@@ -43688,6 +43972,10 @@ p {
 
   .group:hover .md\:group-hover\:text-linkedin {
     color: #2867B2;
+  }
+
+  .group:hover .md\:group-hover\:text-qiita {
+    color: #55C500;
   }
 
   .group:hover .md\:group-hover\:text-white {
@@ -49178,6 +49466,10 @@ p {
     background-color: #2867B2;
   }
 
+  .lg\:bg-qiita {
+    background-color: #55C500;
+  }
+
   .lg\:bg-white {
     background-color: #FFFFFF;
   }
@@ -49222,6 +49514,10 @@ p {
     background-color: #2867B2;
   }
 
+  .lg\:hover\:bg-qiita:hover {
+    background-color: #55C500;
+  }
+
   .lg\:hover\:bg-white:hover {
     background-color: #FFFFFF;
   }
@@ -49264,6 +49560,10 @@ p {
 
   .group:hover .lg\:group-hover\:bg-linkedin {
     background-color: #2867B2;
+  }
+
+  .group:hover .lg\:group-hover\:bg-qiita {
+    background-color: #55C500;
   }
 
   .group:hover .lg\:group-hover\:bg-white {
@@ -49550,6 +49850,10 @@ p {
     border-color: #2867B2;
   }
 
+  .lg\:border-qiita {
+    border-color: #55C500;
+  }
+
   .lg\:border-white {
     border-color: #FFFFFF;
   }
@@ -49594,6 +49898,10 @@ p {
     border-color: #2867B2;
   }
 
+  .lg\:hover\:border-qiita:hover {
+    border-color: #55C500;
+  }
+
   .lg\:hover\:border-white:hover {
     border-color: #FFFFFF;
   }
@@ -49636,6 +49944,10 @@ p {
 
   .group:hover .lg\:group-hover\:border-linkedin {
     border-color: #2867B2;
+  }
+
+  .group:hover .lg\:group-hover\:border-qiita {
+    border-color: #55C500;
   }
 
   .group:hover .lg\:group-hover\:border-white {
@@ -58400,6 +58712,26 @@ p {
     color: #2867B2;
   }
 
+  .lg\:placeholder-qiita::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .lg\:placeholder-qiita::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .lg\:placeholder-qiita:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .lg\:placeholder-qiita::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .lg\:placeholder-qiita::placeholder {
+    color: #55C500;
+  }
+
   .lg\:placeholder-white::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -58620,6 +58952,26 @@ p {
     color: #2867B2;
   }
 
+  .lg\:hover\:placeholder-qiita:hover::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .lg\:hover\:placeholder-qiita:hover::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .lg\:hover\:placeholder-qiita:hover:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .lg\:hover\:placeholder-qiita:hover::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .lg\:hover\:placeholder-qiita:hover::placeholder {
+    color: #55C500;
+  }
+
   .lg\:hover\:placeholder-white:hover::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -58838,6 +59190,26 @@ p {
 
   .group:hover .lg\:group-hover\:placeholder-linkedin::placeholder {
     color: #2867B2;
+  }
+
+  .group:hover .lg\:group-hover\:placeholder-qiita::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .lg\:group-hover\:placeholder-qiita::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .lg\:group-hover\:placeholder-qiita:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .lg\:group-hover\:placeholder-qiita::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .lg\:group-hover\:placeholder-qiita::placeholder {
+    color: #55C500;
   }
 
   .group:hover .lg\:group-hover\:placeholder-white::-webkit-input-placeholder {
@@ -59699,6 +60071,10 @@ p {
     color: #2867B2;
   }
 
+  .lg\:text-qiita {
+    color: #55C500;
+  }
+
   .lg\:text-white {
     color: #FFFFFF;
   }
@@ -59743,6 +60119,10 @@ p {
     color: #2867B2;
   }
 
+  .lg\:hover\:text-qiita:hover {
+    color: #55C500;
+  }
+
   .lg\:hover\:text-white:hover {
     color: #FFFFFF;
   }
@@ -59785,6 +60165,10 @@ p {
 
   .group:hover .lg\:group-hover\:text-linkedin {
     color: #2867B2;
+  }
+
+  .group:hover .lg\:group-hover\:text-qiita {
+    color: #55C500;
   }
 
   .group:hover .lg\:group-hover\:text-white {
@@ -65275,6 +65659,10 @@ p {
     background-color: #2867B2;
   }
 
+  .xl\:bg-qiita {
+    background-color: #55C500;
+  }
+
   .xl\:bg-white {
     background-color: #FFFFFF;
   }
@@ -65319,6 +65707,10 @@ p {
     background-color: #2867B2;
   }
 
+  .xl\:hover\:bg-qiita:hover {
+    background-color: #55C500;
+  }
+
   .xl\:hover\:bg-white:hover {
     background-color: #FFFFFF;
   }
@@ -65361,6 +65753,10 @@ p {
 
   .group:hover .xl\:group-hover\:bg-linkedin {
     background-color: #2867B2;
+  }
+
+  .group:hover .xl\:group-hover\:bg-qiita {
+    background-color: #55C500;
   }
 
   .group:hover .xl\:group-hover\:bg-white {
@@ -65647,6 +66043,10 @@ p {
     border-color: #2867B2;
   }
 
+  .xl\:border-qiita {
+    border-color: #55C500;
+  }
+
   .xl\:border-white {
     border-color: #FFFFFF;
   }
@@ -65691,6 +66091,10 @@ p {
     border-color: #2867B2;
   }
 
+  .xl\:hover\:border-qiita:hover {
+    border-color: #55C500;
+  }
+
   .xl\:hover\:border-white:hover {
     border-color: #FFFFFF;
   }
@@ -65733,6 +66137,10 @@ p {
 
   .group:hover .xl\:group-hover\:border-linkedin {
     border-color: #2867B2;
+  }
+
+  .group:hover .xl\:group-hover\:border-qiita {
+    border-color: #55C500;
   }
 
   .group:hover .xl\:group-hover\:border-white {
@@ -74497,6 +74905,26 @@ p {
     color: #2867B2;
   }
 
+  .xl\:placeholder-qiita::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .xl\:placeholder-qiita::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .xl\:placeholder-qiita:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .xl\:placeholder-qiita::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .xl\:placeholder-qiita::placeholder {
+    color: #55C500;
+  }
+
   .xl\:placeholder-white::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -74717,6 +75145,26 @@ p {
     color: #2867B2;
   }
 
+  .xl\:hover\:placeholder-qiita:hover::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .xl\:hover\:placeholder-qiita:hover::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .xl\:hover\:placeholder-qiita:hover:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .xl\:hover\:placeholder-qiita:hover::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .xl\:hover\:placeholder-qiita:hover::placeholder {
+    color: #55C500;
+  }
+
   .xl\:hover\:placeholder-white:hover::-webkit-input-placeholder {
     color: #FFFFFF;
   }
@@ -74935,6 +75383,26 @@ p {
 
   .group:hover .xl\:group-hover\:placeholder-linkedin::placeholder {
     color: #2867B2;
+  }
+
+  .group:hover .xl\:group-hover\:placeholder-qiita::-webkit-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .xl\:group-hover\:placeholder-qiita::-moz-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .xl\:group-hover\:placeholder-qiita:-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .xl\:group-hover\:placeholder-qiita::-ms-input-placeholder {
+    color: #55C500;
+  }
+
+  .group:hover .xl\:group-hover\:placeholder-qiita::placeholder {
+    color: #55C500;
   }
 
   .group:hover .xl\:group-hover\:placeholder-white::-webkit-input-placeholder {
@@ -75796,6 +76264,10 @@ p {
     color: #2867B2;
   }
 
+  .xl\:text-qiita {
+    color: #55C500;
+  }
+
   .xl\:text-white {
     color: #FFFFFF;
   }
@@ -75840,6 +76312,10 @@ p {
     color: #2867B2;
   }
 
+  .xl\:hover\:text-qiita:hover {
+    color: #55C500;
+  }
+
   .xl\:hover\:text-white:hover {
     color: #FFFFFF;
   }
@@ -75882,6 +76358,10 @@ p {
 
   .group:hover .xl\:group-hover\:text-linkedin {
     color: #2867B2;
+  }
+
+  .group:hover .xl\:group-hover\:text-qiita {
+    color: #55C500;
   }
 
   .group:hover .xl\:group-hover\:text-white {

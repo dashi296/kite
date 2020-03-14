@@ -1,0 +1,30 @@
+
+{{- $url := printf "https://qiita.com/api/v2/items/%s" (index .Params 0) -}}
+{{- $json := getJSON $url -}}
+
+<a href="{{ $json.url }}" target="_blank" rel="noopener">
+<div class="inline-block max-w-lg rounded-md border-solid border border-gray-600 no-underline">
+  <div class="relative select-none">
+    <svg width="300" height="50" viewBox="0 0 300 50" style="height: 100%; width: 100%; border-radius: 0.375rem 0.375rem 0 0">
+      <path d="M0 0 L 0 50 L 25 25 z" fill="#55C500" />
+      <path d="M0 0 L 50 0 L 25 25 z" fill="#5DB012" />
+      <circle cx="300" cy="0" r="35" fill="#4097DC" />
+      <rect x="50%" y="30" width="40" height="15" fill="#55C500" transform="translate(-20,-15)" />
+      <text x="50%" y="22" text-anchor="middle" dominant-baseline="central" class="font-mono font-bold text-xs" fill="white">Qiita</text>
+    </svg>
+
+    <div class="text-center text-lg font-bold p-5 text-black">{{ $json.title }}</div>
+    <div class="absolute text-right text-xs font-bold text-black" style="bottom: 40px; right:10%;">@{{ $json.user.id }}</div>
+
+    <svg width="300" height="50" viewBox="0 0 300 50" style="height: 100%; width: 100%;">
+      <circle cx="0" cy="50" r="35" fill="#F2DFD6" />
+      <path d="M300 50 L 250 50 L 275 25 z" fill="#55C500" />
+      <path d="M300 50 L 300 0 L 275 25 z" fill="#5DB012" />
+    </svg>
+  </div>
+  <div class="p-2">
+    <div class="font-bold text-black">{{ $json.title }} - Qiita</div>
+    <div class="text-xs" style="color: rgb(136, 153, 166);">{{ $json.rendered_body | plainify | truncate 50 }}</div>
+  </div>
+</div>
+</a>
