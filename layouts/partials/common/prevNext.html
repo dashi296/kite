@@ -1,0 +1,21 @@
+<div class="flex justify-between">
+  {{ with .PrevInSection }}
+
+  <a class="relative w-1/2" href="{{.RelPermalink}}">
+    <div class="flex p-5 border-r border-solid border-gray text-gray hover:text-secondary">  
+        <i class="fas fa-chevron-left" ></i>
+        {{.Title}}
+    </div>
+    <div class="absolute text-xs top-0 left-0">前の記事</div>
+  </a>
+  {{ end }}
+  {{ with .NextInSection }}
+  <a class="relative w-1/2" href="{{.RelPermalink}}">
+    <div class="flex p-5 text-secondary text-right text-gray hover:text-secondary">
+        {{.Title}}
+        <i class="fas fa-chevron-right" ></i>
+    </div>
+    <div class="absolute text-xs top-0 right-0">次の記事</div>
+  </a>
+  {{ end }}
+</div>

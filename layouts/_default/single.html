@@ -9,25 +9,10 @@
            {{ .Content }}
         </article>
   </div>
+  {{- partial "common/shareButtons.html" (dict "Title" .Title "absUrl" .Permalink  ) -}}
 </section>
+
 <aside id="meta">
-  <div class="flex justify-between">
-    {{ with .PrevInSection }}
-      <div class="self-start hover:text-primary">
-        <a class="previous" href="{{.RelPermalink}}">
-          <div>前の記事</div>
-          << {{.Title}}
-        </a>
-      </div>
-    {{ end }}
-    {{ with .NextInSection }}
-      <div class="self-end hover:text-primary">
-        <a class="next" href="{{.RelPermalink}}">
-          <div class="text-right">次の記事</div>
-          {{.Title}} >>
-        </a>
-      </div>
-    {{ end }}
-  </div>
+  {{- partial "common/related.html" . -}}
 </aside>
 {{ end }}

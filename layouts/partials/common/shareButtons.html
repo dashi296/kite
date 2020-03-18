@@ -1,0 +1,17 @@
+{{ with $.Site.Params.share }}
+  <ul class="flex justify-center items-center">
+    {{ range sort . "weight" }}
+      {{ if .icon }}
+        <li class="m-4">
+          <a href="{{ printf .url .Title .absUrl }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
+            <i class="{{ .icon }} text-gray hover:text-{{ .name }}" ></i>
+          </a>
+        </li>
+      {{ else }}
+        <li>
+          <a href="{{ printf .url .Title .absUrl }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+  {{ end }}
