@@ -1,0 +1,26 @@
+<div id="open-modal" class="inline-block sm:hidden">
+  <i class="fas fa-bars fa-2x mr-2 cursor-pointer"></i>
+</div>
+
+<div id="modal" class="hidden absolute inset-0">
+  <div class="absolute top-1/5 w-full text-center">
+    {{- partial "header/menus.html" . -}}
+  <div>
+</div>
+
+<script>
+  'use strict';
+  const open =document.getElementById('open-modal');
+  const modal= document.getElementById('modal');
+  //open modal
+  open.addEventListener('click',() => {
+    document.body.style.overflow = 'hidden';
+    modal.classList.remove('hidden');
+  });
+
+  //close modal
+  modal.addEventListener('click',() => {
+    document.body.style.overflow = 'auto';
+    modal.classList.add('hidden');
+  });
+</script>

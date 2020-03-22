@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-  <body>
-    <div class="max-w-screen-xl mx-auto">
-    <div class="flex flex-row-reverse justify-center">
-      {{- partial "header/header.html" . -}}
-      <div id="content" class="w-full p-5 xs:p-2 fade-in">
-        {{- block "main" . }}{{- end }}
+  <body class="bg-black">
+    {{- partial "header/header.html" . -}}
+    <div class="bg-white">
+      <div id="content" class="max-w-screen-lg w-full mx-auto p-5 xs:p-2 fade-in">
+        {{- block "main" . }}
+        {{- end }}
       </div>
     </div>
-  </div>
+    {{- partial "footer/footer.html" . -}}
   </body>
 </html>

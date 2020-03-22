@@ -18,7 +18,7 @@ module.exports = {
       linkedin: '#2867B2',
       qiita: '#55C500',
       white: '#FFFFFF',
-      black: '#000000'
+      black: '#1C1C1C'
     },
     inset: {
       '0': 0,

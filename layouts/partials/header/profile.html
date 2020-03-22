@@ -3,8 +3,8 @@
     <div class="avatar">
       <img src="{{ .avatarUrl | relURL }}" class="rounded-full w-24 h-24 mx-auto my-8" alt="avatar">
     </div>
-    <div class="notable tracking-widest pb-2">{{ .name }}</div>
-    <div class="notable tracking-widest text-sm">{{ .info }}</div>
+    <div class="tracking-widest pb-2">{{ .name }}</div>
+    <div class="tracking-widest text-sm">{{ .info }}</div>
   {{ end }}
 
   {{ with .Site.Params.social }}
