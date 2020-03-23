@@ -1,17 +1,18 @@
 
 {{ define "main" }}
-<section id="main" class="max-w-screen-lg mx-auto py-12">
-  {{- partial "common/dateItem.html" . -}}
-  <h1 id="title">{{ .Title }}</h1>
-  {{- partial "common/tags.html" . -}}
-  <div>
-        <article id="content" class="markdown-body">
-           {{ .Content }}
-        </article>
-  </div>
-  {{- partial "common/shareButtons.html" (dict "Title" .Title "absUrl" .Permalink  ) -}}
-</section>
-
+<main>
+  <article id="main" class="max-w-screen-lg mx-auto py-12 px-2 sm:px-5">
+    <section id="content-title">
+      {{- partial "common/dateItem.html" . -}}
+      <h1 id="title">{{ .Title }}</h1>
+      {{- partial "common/tags.html" . -}}
+    </section>
+    <section id="content" class="markdown-body">
+      {{ .Content }}
+    </section>
+    {{- partial "common/shareButtons.html" (dict "Title" .Title "absUrl" .Permalink  ) -}}
+  </article>
+</main>
 <aside id="meta">
   {{- partial "common/related.html" . -}}
 </aside>

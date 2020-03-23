@@ -1,15 +1,20 @@
 {{ define "main" }}
 <main>
-  <div>
-    <h1>{{.Title}}</h1>
-    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-    {{ .Content }}
-  </div>
+  <article>
+    <div>
+      <div class="bg-gray text-center py-10">
+        <div class="text-xs tracking-widest">TAG</div>
+        <h1 class="py-0">{{ .Title }}</h1>
+      </div>
+      <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+      {{ .Content }}
+    </div>
 
-	{{- partial "common/tagMenu.html" . -}}
-  <!-- Ranges through content/posts/*.md -->
-  {{ range $index, $element := (.Paginator 5).Pages }}
-    {{- partial "common/postItem.html" . -}}
-	{{ end }}
+	  {{- partial "common/tagMenu.html" . -}}
+    <!-- Ranges through content/posts/*.md -->
+    {{ range $index, $element := (.Paginator 5).Pages }}
+      {{- partial "common/postItem.html" . -}}
+    {{ end }}
+  </article>
 </main>
 {{ end }}
