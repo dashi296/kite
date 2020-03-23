@@ -1,12 +1,12 @@
 {{ $pag := $.Paginator }}
 {{ if gt $pag.TotalPages 1 }}
-<ul class="pagination flex justify-center">
+<ul class="pagination flex justify-center my-10">
     {{ with $pag.First }}
-    <li class="page-item mx-2 {{ if not $pag.HasPrev }} hidden {{ end }}">
+    <li class="page-item p-2 mx-2 {{ if not $pag.HasPrev }} hidden {{ end }}">
         <a href="{{ .URL }}" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
     </li>
     {{ end }}
-    <li class="page-item mx-2 {{ if not $pag.HasPrev }} hidden {{ end }}">
+    <li class="page-item p-2 mx-2 {{ if not $pag.HasPrev }} hidden {{ end }}">
     <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}"{{ end }} class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
     </li>
     {{ $ellipsed := false }}
@@ -23,7 +23,7 @@
         {{ $ellipsed = true }}
     {{ end }}
     {{ if $showNumber }}
-    <li class="page-item mx-2 {{ if eq . $pag }} text-secondary{{ end }}">
+    <li class="page-item p-2 mx-2 {{ if eq . $pag }} bg-secondary text-white{{ end }}">
       {{ if eq . $pag }}
       {{ .PageNumber }}
       {{ else }}
@@ -31,14 +31,14 @@
       {{ end }}
     </li>
     {{ else if $shouldEllipse }}
-    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    <li class="page-item p-2 disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
     {{ end }}
     {{ end }}
-    <li class="page-item mx-2 {{ if not $pag.HasNext }} hidden {{ end }}">
+    <li class="page-item p-2 mx-2 {{ if not $pag.HasNext }} hidden {{ end }}">
     <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}"{{ end }} class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
     {{ with $pag.Last }}
-    <li class="page-item mx-2 {{ if not $pag.HasNext }} hidden {{ end }}">
+    <li class="page-item p-2 mx-2 {{ if not $pag.HasNext }} hidden {{ end }}">
         <a href="{{ .URL }}" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     {{ end }}
