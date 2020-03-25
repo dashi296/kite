@@ -819,7 +819,7 @@
 
 .markdown-body .highlight pre,
 .markdown-body pre {
-  padding: 16px;
+  padding: 25px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
@@ -981,4 +981,21 @@
 .markdown-body .task-list-item input {
   margin: 0 .2em .25em -1.6em;
   vertical-align: middle;
+}
+
+/* filename style */
+
+pre.chroma {
+  position: relative;
+}
+
+.code-name {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  padding: 1px 4px;
+  background-color: #777;
+  color: #FFF;
+  font-size: 12px;
 }
