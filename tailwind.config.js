@@ -24,7 +24,8 @@ module.exports = {
       '0': 0,
       auto: 'auto',
       '1/2': '50%',
-      '1/5': '20%'
+      '1/5': '20%',
+      '1/3': '33%',
     }
   },
   variants: ['hover', 'group-hover', 'responsive'],
