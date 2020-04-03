@@ -6,8 +6,6 @@
     {{ if not .IsHome }} {{ .Title }} - {{ end }} {{ .Site.Title }}
     {{ end }}
   </title>
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
@@ -19,6 +17,9 @@
   {{ if .Site.Params.useTimeline }}
   <link rel="stylesheet" href="/css/timeline.css" type="text/css">
   {{ end }}
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <!-- Font Awesome Code -->
   <script src="https://kit.fontawesome.com/5fc43d4a8b.js" crossorigin="anonymous"></script>
   <!-- Google Fonts -->
