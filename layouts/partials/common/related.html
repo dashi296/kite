@@ -1,12 +1,18 @@
 
 {{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ if $related }}
 {{ with $related }}
-  <div class="text-center text-gray">関連記事</div>
-  <ul>
-    {{ range . }}
-    <div class="max-w-screen-lg mx-auto">
-      {{- partial "common/postItem.html" . -}}
-    </div>
-	  {{ end }}
-  </ul>
+<div class="max-w-screen-lg mx-auto">
+  <div class="bg-white rounded-lg sm:my-20 sm:mx-2 py-6 px-2 sm:px-6">
+    <div class="text-center text-gray">関連記事</div>
+      <ul>
+        {{ range . }}
+        <div class="max-w-screen-lg mx-auto">
+          {{- partial "common/postItem.html" . -}}
+        </div>
+	      {{ end }}
+      </ul>
+  </div>
+</div>
+{{ end }}
 {{ end }}

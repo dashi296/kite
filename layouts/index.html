@@ -8,10 +8,12 @@
 </div>
 <main>
     <div class="max-w-screen-lg mx-auto">
+      <div class="bg-white rounded-lg">
     <!-- Ranges through content/posts/*.md -->
     {{ range $index, $element := (.Paginator 5).Pages }}
       {{- partial "common/postItem.html" . -}}
     {{ end }}
+        </div>
     </div>
 
     {{- partial "common/pagination.html" . -}}
