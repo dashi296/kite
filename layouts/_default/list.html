@@ -1,9 +1,11 @@
 {{ define "main" }}
 <main>
     <article>
+      <div class="rounded bg-white">
         <h1>{{.Title}}</h1>
         <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
         {{.Content}}
+        </div>
     </article>
 
     <!-- Ranges through content/posts/*.md -->

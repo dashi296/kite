@@ -1,12 +1,12 @@
 
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
-<div class="text-center text-gray">関連記事</div>
-<ul>
-  {{ range . }}
-  <div class="flex">
-    {{- partial "common/postItem.html" . -}}
-  </div>
-	{{ end }}
-</ul>
+  <div class="text-center text-gray">関連記事</div>
+  <ul>
+    {{ range . }}
+    <div class="max-w-screen-lg mx-auto">
+      {{- partial "common/postItem.html" . -}}
+    </div>
+	  {{ end }}
+  </ul>
 {{ end }}

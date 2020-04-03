@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-  <body>
+  <body class="bg-base">
     {{- partial "header/header.html" . -}}
-    <div class="bg-white">
-      <div id="content" class="mx-auto pb-5 xs:py-2 fade-in">
+      <div id="content" class="fade-in">
         {{- block "main" . }}
         {{- end }}
       </div>
-    </div>
     {{- partial "footer/footer.html" . -}}
     {{- partial "scripts.html" . -}}
   </body>
