@@ -3,12 +3,12 @@
 {{ if $related }}
 {{ with $related }}
 <div class="max-w-screen-lg mx-auto">
-  <div class="bg-white rounded-lg sm:my-20 sm:mx-2 py-6 px-2 sm:px-6">
-    <div class="text-center text-gray">関連記事</div>
+  <div class="bg-white sm:rounded-lg my-10 sm:my-20 sm:mx-2 py-6 px-2 sm:px-6">
+    <div class="text-center text-gray pb-6">関連記事</div>
       <ul>
         {{ range . }}
         <div class="max-w-screen-lg mx-auto">
-          {{- partial "common/postItem.html" . -}}
+          {{- partial "common/relatedPostItem.html" . -}}
         </div>
 	      {{ end }}
       </ul>

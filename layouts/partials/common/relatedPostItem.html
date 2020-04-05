@@ -1,13 +1,9 @@
 
-  <div class="rounded hover:text-primary p-2 pb-6 sm:p-5 inline-block w-full">
+  <div class="rounded hover:text-primary p-2 sm:p-5 inline-block w-full">
     <a href="{{.RelPermalink}}">
       {{- partial "common/dateItem.html" . -}}
       <div class="text-xl font-bold tracking-wider pb-1">
         {{ .Title }}
-      </div>
-    
-      <div class="text-sm tracking-wide leading-5 text-black">
-        {{ .Summary }}{{ if .Truncated }}...{{ end }}
       </div>
     </a>
     {{- partial "common/tags.html" . -}}
