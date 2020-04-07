@@ -1,20 +1,32 @@
 
 {{ define "main" }}
 <main>
-  <div class="max-w-screen-lg mx-auto">
-  <article id="main" class="bg-white sm:rounded-lg sm:my-6 sm:mx-2 py-6 px-2 sm:px-6">
+  <div class="flex justify-center">
+    <div class="hidden xl:inline-block w-1/5">
+      <div class="sticky top-1/3">
+      {{- partial "common/shareButtons.html" . -}}
+      </div>
+    </div>
+    <div class="max-w-screen-lg w-full">
+      <article id="main" class="bg-white sm:rounded-lg sm:my-6 sm:mx-2 py-6 px-2 sm:px-6">
+        <section id="content-title">
+          {{- partial "common/dateItem.html" . -}}
+          <h1 id="title">{{ .Title }}</h1>
+          {{- partial "common/tags.html" . -}}
+        </section>
+        <section id="content" class="markdown-body">
+          {{ .Content }}
+        </section>
+        {{- partial "common/shareButtons.html" (dict "Title" .Title "absUrl" .Permalink  ) -}}
+      </article>
+    </div>
 
-    <section id="content-title">
-      {{- partial "common/dateItem.html" . -}}
-      <h1 id="title">{{ .Title }}</h1>
-      {{- partial "common/tags.html" . -}}
-    </section>
-    <section id="content" class="markdown-body">
-      {{ .Content }}
-    </section>
-    {{- partial "common/shareButtons.html" (dict "Title" .Title "absUrl" .Permalink  ) -}}
-  </article>
-</div>
+    <div class="hidden xl:inline-block w-1/5">
+      <div class="sticky top-0">
+      {{ .TableOfContents }}
+      </div>
+    </div>
+  </div>
 </main>
 <aside id="meta">
   {{- partial "common/related.html" . -}}

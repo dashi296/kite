@@ -1,18 +1,23 @@
 {{ define "main" }}
 <main>
-    <article>
-      <div class="rounded bg-white">
-        <h1>{{.Title}}</h1>
-        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-        {{.Content}}
-        </div>
-    </article>
+  <div class="relative top-wrapper mb-10">
+    <img class="object-cover w-full" style="height: 200px;" src="/images/top-img.jpg" alt="top-img">
+    <div class="absolute text-center top-1/5 inset-x-0">
+      <img src="{{ .Site.Params.author.logoUrl | relURL }}" class="mx-auto" alt="logo">
+      <div class="text-primary font-bold pt-2" style="letter-spacing: .2em;">DASHLOG</div>
+    </div>
+  </div>
 
+  <div class="max-w-screen-lg mx-auto">
+    <div class="bg-white rounded-lg">
     <!-- Ranges through content/posts/*.md -->
-    {{ range $index, $element := (.Paginator 5).Pages }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "post") }}
+    {{ range $index, $element := $paginator.Pages }}
       {{- partial "common/postItem.html" . -}}
     {{ end }}
+    </div>
 
     {{- partial "common/pagination.html" . -}}
+  </div>
 </main>
 {{ end }}
