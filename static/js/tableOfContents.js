@@ -1,0 +1,1 @@
+const tocChildren = window.document.getElementById("tableOfContents").childNodes
