@@ -4,7 +4,7 @@
   <div class="flex justify-center">
     <div class="hidden xl:inline-block w-1/5">
       <div class="sticky top-1/3">
-      {{- partial "common/shareButtons.html" . -}}
+      {{- partial "common/stickyShareButtons.html" . -}}
       </div>
     </div>
     <div class="max-w-screen-lg w-full">
@@ -17,12 +17,16 @@
         <section id="content" class="markdown-body">
           {{ .Content }}
         </section>
-        {{- partial "common/shareButtons.html" (dict "Title" .Title "absUrl" .Permalink  ) -}}
+
+        <div class="py-5">
+        {{- partial "common/divider.html" . -}}
+        </div>
+        {{- partial "common/buttomShareButtons.html" . -}}
       </article>
     </div>
 
-    <div class="hidden xl:inline-block w-1/5">
-      <div class="sticky top-0">
+    <div class="hidden xl:inline-block w-1/5 pb-6 pl-4 pr-2">
+      <div class="sticky top-0 max-h-screen pt-6">
       {{ .TableOfContents }}
       </div>
     </div>

@@ -2,20 +2,17 @@
 {{ $Title := .Title }}
 {{ $pageUrl := .Permalink }}
 {{ with .Site.Params.share }}
-
-  <ul class="flex flex-col justify-center items-end">
-    {{ range sort . "weight" }}
-      {{ if .icon }}
-        <li class="m-4">
-          <a href="{{ printf .url $Title $pageUrl }}" aria-label="{{ .name }}" target="_blank" rel=”noopener”>
-            <i class="{{ .icon }} text-gray hover:text-{{ .name }}" ></i>
-          </a>
-        </li>
-      {{ else }}
-        <li>
-          <a href="{{ printf .url $Title $pageUrl }}" aria-label="{{ .name }}" target="_blank" rel="noopener">{{ .name }}</a>
-        </li>
-      {{ end }}
-    {{ end }}
-  </ul>
+{{ range sort . "weight" }}
+  {{ if .icon }}
+    <li class="m-4">
+      <a href="{{ printf .url $Title $pageUrl }}" aria-label="{{ .name }}" target="_blank" rel=”noopener”>
+        <i class="{{ .icon }}" ></i>
+      </a>
+    </li>
+  {{ else }}
+    <li>
+      <a href="{{ printf .url $Title $pageUrl }}" aria-label="{{ .name }}" target="_blank" rel="noopener">{{ .name }}</a>
+    </li>
   {{ end }}
+{{ end }}
+{{ end }}
