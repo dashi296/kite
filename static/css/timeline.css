@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-left: 130px;
   position: relative;
+  color: #FFFFFF;
 }
 
 .timeline + ul::before {
@@ -20,11 +21,13 @@
   position: relative;
   padding: 10px;
   background-color: #61C0CD;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .timeline + ul > li > p {
   position: absolute;
-  top: 0;
+  top: 8px;
   left: -150px;
   padding: 0;
   margin: 0;
@@ -38,9 +41,21 @@
   content: '';
   width: 15px;
   height: 15px;
-  top: 0;
+  top: 12px;
   left: -50px;
   border-radius: 50%;
   background-color: #61C0CD;
 }
 
+.timeline + ul > li::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 10px;
+  left: -10px;
+
+  border-top: 10px solid transparent;
+  border-right: 10px solid #61C0CD;
+  border-bottom: 10px solid transparent;
+}
