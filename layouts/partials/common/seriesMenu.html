@@ -1,0 +1,8 @@
+<div class="flex justify-start flex-wrap p-2 sm:p-5">
+
+{{ $currentSeries := .Title }}
+  {{ range .Site.Taxonomies.series }}
+  {{ $isActive := eq $currentSeries .Page.Title }}
+    {{- partial "common/seriesItem.html" (dict "context" . "isActive" $isActive) -}}
+  {{ end }}
+</div>
