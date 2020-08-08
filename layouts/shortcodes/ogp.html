@@ -10,15 +10,15 @@
 {{ $prefix := "https://www.google.com/s2/favicons?domain=" }}
 {{ $favicon := printf "%s%s" $prefix $urlInfo.Host }}
 
-<div class="box">
-    <a class="box-content" target="_blank" rel="noopener" href="{{ $url }}">
-        <div class="box-content">
-            <div class="box-left">
-                <h2 class="box-title">{{ $title }}</h2>
-                <div class="box-description">{{ $description }}</div>
-                <div class="box-host">{{ $host }}</div>
-            </div>
-            <div class="box-image-container" style="background-image: url('{{ $image }}');" ></div>
-        </div>
-    </a>
+<div class="inline-block shadow-lg">
+<a target="_blank" rel="noopener" href="{{ $url }}" class="max-w-3xl md:flex shadow-sm hover:shadow-lg group-hover:no-underline">
+  {{ if $image }}
+  <img src="{{ $image }}" class="max-w-full md:max-w-xs">
+  {{ end }}
+  <div class="bg-white rounded-b md:rounded-b-none md:rounded-r p-4 flex flex-col justify-between leading-normal">
+    <div class="font-bold text-xl mb-2">{{ $title }}</div>
+    <div class="text-gray pb-2">{{ $description }}</div>
+    <div class="text-sm text-gray">{{ $host }}</div>
+  </div>
+</a>
 </div>
