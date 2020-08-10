@@ -1,8 +1,8 @@
 var CANVAS_HEIGHT = 200
 var MIN_FONT_SIZE = 50
 var FONT_SIZE_RATE = 15
-var PARTICLE_SIZE_RATE = 2
-var TEXT = "DASHI LAB"
+var PARTICLE_BASE_SIZE = 3
+var TEXT = "DASHI LAB."
 var TEXT_Y_OFFSET = 20
 
 	var canvas = document.querySelector("#canvas1"),
@@ -25,14 +25,14 @@ function Particle(x,y){
     x : x,
     y: y
   };
-  this.r =  Math.random()*5 + PARTICLE_SIZE_RATE;
+  this.r =  Math.random() * 2 + PARTICLE_BASE_SIZE;
   this.vx = (Math.random()-0.5)*20;
   this.vy = (Math.random()-0.5)*20;
   this.accX = 0;
   this.accY = 0;
   this.friction = Math.random()*0.05 + 0.94;
 
-  this.color = colors[Math.floor(Math.random()*5)];
+  this.color = colors[Math.floor(Math.random()*4)];
 }
 
 Particle.prototype.render = function() {
