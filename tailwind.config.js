@@ -30,5 +30,8 @@ module.exports = {
     }
   },
   variants: ['hover', 'group-hover', 'responsive'],
-  plugins: []
+  plugins: [],
+  purge: {
+    enabled: false,
+  }
 }

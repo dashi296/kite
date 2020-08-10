@@ -1,7 +1,5 @@
-const themeDir = __dirname + '/../../'
-
 const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: ['layouts/**/*.html', themeDir + 'layouts/**/*.html'],
+  content: ['layouts/**/*.html'],
   whitelistPatterns: [
     /(^|\.)fa-/,
     /-fa($|\.)/,
