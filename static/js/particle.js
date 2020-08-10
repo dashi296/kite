@@ -87,6 +87,11 @@ function onTouchEnd(e){
   mouse.y = -9999;
 }
 
+function onTouchCancel(e){
+  mouse.x = -9999;
+  mouse.y = -9999;
+}
+
 function initScene(){
   ww = canvas.width = window.innerWidth;
   wh = canvas.height = CANVAS_HEIGHT;
@@ -136,6 +141,7 @@ canvas.addEventListener("mouseleave", onMouseLeave);
 canvas.addEventListener("touchmove", onTouchMove);
 canvas.addEventListener("click", onMouseClick);
 canvas.addEventListener("touchend", onTouchEnd);
+canvas.addEventListener("touchcancel", onTouchCancel);
 initScene();
 requestAnimationFrame(render);
 
