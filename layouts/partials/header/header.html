@@ -3,9 +3,9 @@
   <div class="flex justify-between items-center w-full">
     <div class="logo ml-4">
       <a href="{{ .Site.BaseURL | relURL }}" class="flex justify-center items-center">
-        <img src="{{ .Site.Params.author.logoUrl | relURL }}" alt="logo" class="w-10 h-10 mr-3">
+        <img src="{{ .Site.Params.author.logoUrl | relURL }}" alt="logo" class="w-6 h-6 mr-3">
         <div class="text-2xl text-primary font-bold tracking-widest py-3 text-center">
-          {{ .Site.Title }}
+          {{ .Site.Title }}<span class="text-secondary">.</span>
         </div>
       </a>
     </div>
