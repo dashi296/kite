@@ -13,6 +13,24 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-image:
+  repeating-linear-gradient(
+    90deg,
+    #DDD ,
+    #DDD 1px,
+    transparent 1px,
+    transparent 32px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    #DDD ,
+    #DDD 1px,
+    transparent 1px,
+    transparent 32px
+  );
+}
+
 *,
 *:before,
 *:after {
