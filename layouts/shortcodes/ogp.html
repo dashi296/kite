@@ -10,7 +10,7 @@
 {{ $prefix := "https://www.google.com/s2/favicons?domain=" }}
 {{ $favicon := printf "%s%s" $prefix $urlInfo.Host }}
 
-<div class="inline-block shadow-lg">
+<div class="inline-block shadow-lg mb-10">
 <a target="_blank" rel="noopener" href="{{ $url }}" class="max-w-3xl md:flex shadow-sm hover:shadow-lg group-hover:no-underline">
   {{ if $image }}
   <img src="{{ $image }}" class="max-w-full md:max-w-xs">
